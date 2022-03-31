@@ -1,3 +1,4 @@
+import 'package:first_app/utils/dimention.dart';
 import 'package:first_app/widgets/small_text.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -16,7 +17,7 @@ class IconAndTextWidge extends StatelessWidget {
     return Row(
       children: [
         Icon(icon, color: iconColor,),
-        SizedBox(width: 10,),
+        SizedBox(width: Dimensions.width10),
         SmallText(text: text,),
       ],
     );
