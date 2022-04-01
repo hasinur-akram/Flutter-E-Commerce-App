@@ -1,9 +1,11 @@
-import 'package:first_app/home/food_page_body.dart';
+
 import 'package:first_app/utils/colors.dart';
 import 'package:first_app/utils/dimention.dart';
 import 'package:first_app/widgets/big_text.dart';
 import 'package:first_app/widgets/small_text.dart';
 import 'package:flutter/material.dart';
+
+import 'food_page_body.dart';
 
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
@@ -15,7 +17,7 @@ class MainFoodPage extends StatefulWidget {
 class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
-    print("current width is "+MediaQuery.of(context).size.width.toString());
+    print("current height is "+MediaQuery.of(context).size.height.toString());
     return Scaffold(
       body: Column(
         children: [

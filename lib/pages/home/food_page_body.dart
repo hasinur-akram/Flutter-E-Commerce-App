@@ -1,12 +1,15 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:first_app/utils/colors.dart';
+import 'package:first_app/widgets/app_column.dart';
 import 'package:first_app/widgets/big_text.dart';
 import 'package:first_app/widgets/icon_and_text_widget.dart';
 import 'package:first_app/widgets/small_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/dimention.dart';
+import '../../utils/dimention.dart';
+
+
 
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
@@ -123,26 +126,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                           ),
                           child: Padding(
                             padding: EdgeInsets.only(left: Dimensions.width10,),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                BigText(text: "Web Application for Desktop"),
-                                SizedBox(height: Dimensions.height10,),
-                                SmallText(text: "Operate the App by your Desktop"),
-                                SizedBox(height: Dimensions.height10,),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    IconAndTextWidge(icon: Icons.circle_sharp, text: 'Normal', iconColor: AppColors.iconColor1),
-
-                                    IconAndTextWidge(icon: Icons.location_on, text: '3.8km', iconColor: AppColors.mainColor),
-
-                                    IconAndTextWidge(icon: Icons.access_time_rounded, text: '28min', iconColor: AppColors.iconColor2)
-                                  ],
-                                )
-                              ],
-                            ),
+                            child: AppColumn(text: "Flutter E-Commerce App",),
                           ),
                         ),
                       ),
